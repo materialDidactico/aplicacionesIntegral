@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Sumas de Riemann | Sólidos de revolución </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="." />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /><script>
+window.MathJax = {
+  tex: {
+    tags: "ams",
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script">
+</script></head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(banner.1.png); background-repeat: repeat-x;"><div id="headerContent">Sólidos de revolución</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="resea_histrica.html" class="daddy">Reseña Histórica</a>
+   <ul class="other-section">
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="mediacin_pedaggica.html" class="current-page-parent daddy">Mediación Pedagógica</a>
+   <ul>
+      <li id="active"><a href="sumas_de_riemann.html" class="active daddy">Sumas de Riemann</a>
+      <ul>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios propuestos</a></li>
+      </ul>
+      </li>
+      <li><a href="slidos_de_revolucin.html" class="daddy">Sólidos de Revolución</a>
+      <ul class="other-section">
+         <li><a href="ejemplo_mtodo_de_discos.html" class="no-ch">Ejemplo: Método de Discos</a></li>
+         <li><a href="ejemplo_mtodo_de_las_capas_o_cascarones_cilndricos.html" class="no-ch">Ejemplo: Método de las Capas o cascarones Cilíndricos</a></li>
+         <li><a href="ejercicios_propuestos0.html" class="no-ch">Ejercicios propuestos</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mediacin_pedaggica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Sumas de Riemann</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id26">
+<div class="iDevice emphasis0">
+<div id="ta26_85" class="block iDevice_content">
+<p><img src="banner1.png" width="1232" height="268" /></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id32">
+<div class="iDevice emphasis0">
+<div id="ta32_85" class="block iDevice_content">
+<p><strong><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Problema general</span></strong><br /><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">A continuación se abordará el problema general de encontrar el área bajo la gráfica de una función \(y=f(x)\) que es continua en un intervalo \([a,b]\).</span><br /><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Suponiendo que \(f(x)\geq 0\) para toda \(x\) en el intervalo \([a,b]\), es posible aproximar el área que se encuentra bajo la gráfica de \(f\) al sumar el área de \(n\) rectángulos que se construyen sobre el intervalo, para ellos puede considerarse el siguiente procedimiento: </span><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"></span></p>
+<p><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"> </span></p>
+<ul>
+<li><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Divida el intervalo \([a,b]\) en \(n\) subintervalos \([x_{k-1},x_k]\), donde</span><br /><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[a=x_0 &lt;x_1&lt; x_2&lt; \cdots x_{n-1}&lt;x_n=b\] </span><span style="font-family: helvetica, arial, sans-serif; font-size: 13pt;">de modo que cada subintervalo tiene el mismo ancho \(\bigtriangleup _x=\displaystyle \frac{b-a}{n}\) y se obtenga una partición regular del intervalo \([a,b]\). </span></li>
+<li><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Elija un número \(x_k^{\ast}\) en cada uno de los \(n\) subintervalos \([x_{k-1},x_k]\) y forme los \(n\) productos \(f(x_k^{\ast})\bigtriangleup_x\). </span><span style="font-family: helvetica, arial, sans-serif; font-size: 13pt;">Note que el área de un rectángulo es largo \(\times\) ancho, \(f(x_k^{\ast})\bigtriangleup_x\) es el área del rectángulo de largo \(f(x_k^{\ast})\) y ancho \(\bigtriangleup_x\) construido sobre el k-ésimo subintervalo \([x_{k-1},x_k]\). </span><span style="font-family: helvetica, arial, sans-serif; font-size: 13pt;"></span>  </li>
+<li style="text-align: left;"><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">La suma de las áreas de los \(n\) rectángulos </span><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[\sum_{k=1}^n f(x_k^{\ast}) \bigtriangleup_x=f(x_1^{\ast}) \bigtriangleup_x+f(x_2^{\ast}) \bigtriangleup_x+f(x_3^{\ast}) \bigtriangleup_x + \cdots + f(x_n^{\ast})\bigtriangleup_x\] </span>representa una aproximación al valor del área \(A\) bajo la gráfica de \(f\) sobre el intervalo \([a,b]\). </li>
+</ul>
+<p><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"></span><br /><br /></p>
+<figure class="exe-figure exe-image position-center" style="width: 677px;"><img src="figura8.jpg" alt="" width="677" height="405" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" />
+<figcaption class="figcaption"><span class="title" style="font-size: 12pt; font-family: helvetica, arial, sans-serif;"><strong>Figura 3:</strong> Aproximación del área baja la gráfica de $f$ mediante la suma de 11 subintervalos de igual longitud.</span></figcaption>
+</figure>
+<p><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"><br /><br /></span></p>
+<p><br /><strong><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Área bajo la curva</span></strong></p>
+<p><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Sea \(f\) una función continua sobre \([a,b]\) y \(f(x)\geq 0\) para toda \(x\) en el intervalo. El área \(A\) bajo la gráfica de \(f\) sobre el intervalo se define como </span></p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[A=\lim_{n\rightarrow \infty}\sum_{k=1}^n f(x_k^{\ast})\bigtriangleup_x\]</span><br /> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Para usar la fórmula anterior, se elije \(x_k^{\ast}\) como punto fronterizo derecho de cada subintervalo, ver figura 3. Puesto que el ancho de cada uno de los \(n\) subintervalos de igual ancho es \(\Delta_x=\dfrac{b-a}{n}\), se tiene:</span></p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[x_k^{\ast}=a+k\Delta_x=a+k\dfrac{b-a}{n}\]</span></p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Luego, para \(k=1,2,\cdots,n\) tenemos</span></p>
+<p> <br /><span style="font-family: helvetica, arial, sans-serif; font-size: 13pt;">\begin{align*}<br />x_1^{\ast} &amp;=a+\Delta_x=a+k\dfrac{b-a}{n}\\<br />x_2^{\ast} &amp;=a+2\Delta_x=a+2\dfrac{b-a}{n}\\<br />x_3^{\ast} &amp;=a+3\Delta_x=a+3\dfrac{b-a}{n}\\<br />\vdots\\<br />x_n^{\ast} &amp;=a+n\Delta_x=a+n\dfrac{b-a}{n}=b<br />\end{align*}</span></p>
+<p><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Así, al sustituir \(a+k\dfrac{b-a}{n}\), por \(x_k^{\ast} \) y \(\dfrac{b-a}{n}\) por \(\Delta_x\) se concluye que el área también está dada por</span></p>
+<p></p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[A=\lim_{n\rightarrow \infty}\sum_{k=1}^n f \left(a+k\dfrac{b-a}{n} \right)\cdot\dfrac{b-a}{n}\]</span></p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Note que \(\Delta_x=\dfrac{b-a}{n}\), \(n\rightarrow \infty\), se tiene que \(\Delta_x\rightarrow 0\).</span><br /><br /></p>
+<p> <br /><strong><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">La integral definida</span></strong><br />  </p>
+<p> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Como se ha visto en la sección anterior, el área bajo la gráfica de una función continua no negativa sobre un intervalo \([a,b]\) se define como el límite de una suma. El concepto de integral definida se construye mediante un proceso similar.</span><br /> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Se considera \(y=f(x)\) una función definida sobre un intervalo cerrado \([a,b]\) y se tienen en cuenta los siguientes pasos:</span><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"></span></p>
+<ul>
+<li><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"> </span><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Divida el intervalo \([a,b]\) en \(n\) subintervalos \([x_{k-1},x_k]\), de anchos \(\bigtriangleup_{x_k}=x_k-x_{k-1}\) </span><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[a=x_0 &lt;x_1&lt; x_2&lt; \cdots x_{n-1}&lt;x_n=b\] </span>a esta colección de números se les llama partición del intervalo y se denota por \(P\). </li>
+<li style="text-align: left;">Sea \(\|P\|\) el mayor número de los \(n\) anchos de los subintervalos \(\bigtriangleup_{x_1},\bigtriangleup_{x_2},\cdots,\bigtriangleup_{x_n}\). El número \(\|P\|\) se denomina norma de la partición \(P\). </li>
+<li>Escoja un número \(x_k^{\ast}\) en cada subintervalo \([x_{k-1},x_k]\).</li>
+</ul>
+<p style="text-align: center;"><br /> </p>
+<figure class="exe-figure exe-image position-center" style="width: 650px;"><img src="figura9.jpg" alt="" width="650" height="105" />
+<figcaption class="figcaption"><span class="title" style="font-size: 12pt; font-family: helvetica, arial, sans-serif;"><strong>Figura 4:</strong> Partición P del intervalo \([a,b]\)</span></figcaption>
+</figure>
+<p style="text-align: left;">  <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;"></span></p>
+<ul>
+<li><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Forme la suma </span><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">\[\sum_{k=1}^n f(x_k^{\ast})\bigtriangleup_k\]</span><br /><br /> <br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Estas sumas que correponden a varias particiones de \([a,b] \) se denominan <strong>sumas de Riemman</strong> en honor al famoso matemático alemán Georg Friedrich Bernhard Riemman.</span><br /><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Debe notarse que aunque el procedimiento anterior es semejante a los utilizados en área bajo la curva, una diferencia importante es que una suma de Riemman no requiere que \(f\) sea continua o no negativa sobre \([a,b]\), además no necesariamente representa una aproximación del área bajo la gráfica.</span><br /><br /> <br />
+<figure class="exe-figure exe-image position-center" style="width: 677px;"><img src="figura10.jpg" alt="" width="677" height="466" />
+<figcaption class="figcaption"><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;"><strong><span class="title">Figura 5:</span></strong></span></figcaption>
+</figure>
+<br /><br /><br /><span style="font-size: 13pt; font-family: helvetica, arial, sans-serif;">Se debe tener en cuenta que el área bajo una gráfica se refiere al área acotada entre la gráfica de una función continua no negativa y el eje \(x\). Una suma de Riemman puede contener términos \(f(x_k^{\ast})\bigtriangleup_k\) donde \(f(x_k^{\ast})&lt; 0\); en este caso los puntos \(f(x_k^{\ast})\bigtriangleup_k\) son números negativos de las áreas de rectángulos trazados bajo el eje \(x\).</span></li>
+</ul>
+<p> </p>
+<p></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_85" class="block iDevice_content">
+<p> </p>
+<p> </p>
+<hr />
+<p></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mediacin_pedaggica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_fpd_js.js"></script></body></html>
