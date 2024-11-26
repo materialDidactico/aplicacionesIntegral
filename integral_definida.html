@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Integral Definida | Sólidos de revolución </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alejandro Salas Vargas - Daniela Araya Román" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /><script>
+window.MathJax = {
+  tex: {
+    tags: "ams",
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script">
+</script></head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(banner.1.png); background-repeat: repeat-x;"><div id="headerContent">Sólidos de revolución</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="resea_histrica.html" class="daddy">Reseña Histórica</a>
+   <ul class="other-section">
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="mediacin_pedaggica.html" class="current-page-parent daddy">Mediación Pedagógica</a>
+   <ul>
+      <li class="current-page-parent"><a href="sumas_de_riemann.html" class="current-page-parent daddy">Sumas de Riemann</a>
+      <ul>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li id="active"><a href="integral_definida.html" class="active no-ch">Integral Definida</a></li>
+         <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios propuestos</a></li>
+      </ul>
+      </li>
+      <li><a href="slidos_de_revolucin.html" class="daddy">Sólidos de Revolución</a>
+      <ul class="other-section">
+         <li><a href="mtodo_de_discos.html" class="no-ch">Método de Discos</a></li>
+         <li><a href="mtodo_de_las_capas_o_cascarones_cilndricos.html" class="no-ch">Método de las Capas o cascarones Cilíndricos</a></li>
+         <li><a href="ejercicios_propuestos0.html" class="no-ch">Ejercicios propuestos</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicios_propuestos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Integral Definida</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">La integral definida</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_127_2" class="block iDevice_content">
+<div class="exe-text"><p> La integral definida<br />  </p>
+<p> <br />Como se ha visto en la sección anterior, el área bajo la gráfica de una función continua no negativa sobre un intervalo \([a,b]\) se define como el límite de una suma. El concepto de integral definida se construye mediante un proceso similar.<br /> <br />Se considera \(y=f(x)\) una función definida sobre un intervalo cerrado \([a,b]\) y se tienen en cuenta los siguientes pasos:</p>
+<p><br /> Divida el intervalo \([a,b]\) en \(n\) subintervalos \([x_{k-1},x_k]\), de anchos \(\bigtriangleup_{x_k}=x_k-x_{k-1}\) \[a=x_0 &lt;x_1&lt; x_2&lt; \cdots x_{n-1}&lt;x_n=b\] a esta colección de números se les llama partición del intervalo y se denota por \(P\). <br />Sea \(\|P\|\) el mayor número de los \(n\) anchos de los subintervalos \(\bigtriangleup_{x_1},\bigtriangleup_{x_2},\cdots,\bigtriangleup_{x_n}\). El número \(\|P\|\) se denomina norma de la partición \(P\). <br />Escoja un número \(x_k^{\ast}\) en cada subintervalo \([x_{k-1},x_k]\).</p>
+<p> </p>
+<p>Figura 4: Partición P del intervalo \([a,b]\)<br />  </p>
+<p><br />Forme la suma \[\sum_{k=1}^n f(x_k^{\ast})\bigtriangleup_k\]</p>
+<p> <br />Estas sumas que correponden a varias particiones de \([a,b] \) se denominan sumas de Riemman en honor al famoso matemático alemán Georg Friedrich Bernhard Riemman.</p>
+<p>Debe notarse que aunque el procedimiento anterior es semejante a los utilizados en área bajo la curva, una diferencia importante es que una suma de Riemman no requiere que \(f\) sea continua o no negativa sobre \([a,b]\), además no necesariamente representa una aproximación del área bajo la gráfica.</p>
+<p style="text-align: center;"> <img src="figura10.jpg" width="659" height="454" style="display: block; margin-left: auto; margin-right: auto;" /><br /><strong>Figura 5:</strong> Suma de Riemman que relacionada un intervalo donde \(f(x)&lt;0\) y otro <br />donde \(f(x)&gt;0\)</p>
+<p></p>
+<p>Se debe tener en cuenta que el área bajo una gráfica se refiere al área acotada entre la gráfica de una función continua no negativa y el eje \(x\). Una suma de Riemman puede contener términos \(f(x_k^{\ast})\bigtriangleup_k\) donde \(f(x_k^{\ast})&lt; 0\); en este caso los valores \(f(x_k^{\ast})\bigtriangleup_k\) son números negativos de las áreas de rectángulos trazados bajo el eje \(x\).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicios_propuestos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_fpd_js.js"></script></body></html>
